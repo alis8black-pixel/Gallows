@@ -20,13 +20,15 @@ namespace виселица
 
                 if (Game.isVin())
                 {
-                    Console.WriteLine("ПОБЕДА");
+                    Game.Gallows();
+                    Game.goodLetter();
+                    Console.WriteLine("\nПОБЕДА");
                     break;
                 }
                 if (Game.isLoose())
                 {
                     Game.Gallows();
-                    Console.WriteLine("ЛУЗЕР");
+                    Console.WriteLine("\nЛУЗЕР");
                     break;
                 }
             }
